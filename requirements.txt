@@ -1,0 +1,33 @@
+opencv-python   #for computer vision
+pymongo           #for mongodb interaction through python
+requests         #for http request sending purpose
+numpy
+Flask
+moviepy
+pydub
+speechrecognition
+ffmpeg     #--> pydub indirectly uses ffmpeg for audio processing
+whisper
+gensim
+nltk
+pyspellchecker
+transformers
+spacy
+keybert
+huggingface-hub   #--> to increase request timout
+sklearn
+torch
+scikit-image
+requests
+moviepy
+gTTS
+sounddevice
+wavio
+requests
+transformers
+wikipedia-api
+wikipedia
+tensorflow
+keras
+imageio[ffmpeg]    #for moviepy
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Generated</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Output Generated</h1>
+        {% if option == 'audio' %}
+            <p>Audio has been extracted successfully!</p>
+            <p><a href="{{ url_for('download_file', option='download', filename='output_audio.mp3') }}">Download Audio File</a></p>
+        {% elif option == 'text' %}
+            <p>Text has been generated successfully!</p>
+            <p><a href="{{ url_for('download_file', option='download', filename='output_text.txt') }}">Download Text File</a></p>
+        {% elif option == 'video' %}
+            <p>Video with timestamps has been generated successfully!</p>
+            <p><a href="{{ url_for('download_file', option='download', filename='output_with_timestamps.mp4') }}">Download Video File</a></p>
+        {% endif %}
+        <p><a href="/">Upload another video</a></p>
+    </div>
+</body>
+</html>
